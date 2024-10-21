@@ -1,0 +1,10 @@
+**/Java.code-profile
+.vscode/
+Cliente/
+Interfaces/
+Java.code-profile
+Servidor/
+
+# Ignorar cualquier archivo temporal o innecesario
+
+../-
