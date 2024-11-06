@@ -1,0 +1,111 @@
+ body{
+    background-image:url(telon-fondo-hojas-verdes_23-2147836966.avif) ;
+    background-size: cover;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    flex-direction: column;
+
+}
+.form-container {
+    width: 30%;
+    /* margin: 30px auto;  */
+    margin-top: 80px;
+    padding: 20px;
+    background:linear-gradient(to right,#9EE493, #70566D);
+    background-color: #f4f4f4; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px #829298;
+
+  }
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #829298;
+    text-align: center;
+
+}
+div h1{
+    height: 10%;
+    margin-top: 2px;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+    color:#42273B;    font-size: 3em; 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    border-radius: 5px; 
+}
+
+fieldset{
+    display:flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+legend{
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    color:#42273B;
+}
+div{
+    padding:5px;
+}
+
+
+label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+ #formaContacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:10px;
+} 
+
+select[id="comunidad"] {
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid #82AC9F;
+    border-radius: 3px;
+    font-size: 14px;
+}
+input,textarea{
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #82AC9F;
+    color: rgb(231, 242, 230);
+    border: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #70566D;
+}
+input:required:invalid{
+    background-color: S#b6b3b6;
+
+} 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="DiseñoEmpresa.css">
+    <title>DiseñoEmpresa</title>
+
+</head>
+<body>
+    <div class="form-container">
+    
+    <form action="/enviar" method="post">
+        <div id="titulo">
+            <h1>Formulario de contacto</h1>
+        </div>
+        <fieldset>
+            <legend>Datos personales</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+                <div>
+                    <label for="comunidad">C.Autónoma</label>
+                    <select id="comunidad" name="comunidad">
+                        <option value="Madrid" disabled selected>Comunidad de Madrid</option>
+                        <option value="Andalucía">Andalucía</option>
+                        <option value="Aragón">Aragón</option>
+                        <option value="Asturias">Asturias</option>
+                        <option value="IslasBaleares">Islas Baleares</option>
+                        <option value="Canarias">Canarias</option>
+                        <option value="Cantabria">Cantabria</option>
+                        <option value="CyLeon">Castilla y León</option>
+                        <option value="CMancha">Castilla la Mancha</option>
+                        <option value="Catalunna">Cataluña</option>
+                        <option value="Valencia">Comunidad Valenciana</option>
+                        <option value="Extremadura">Extremadura</option>
+                        <option value="Galicia">Galicia</option>
+                        <option value="Murcia">Murcia</option>
+                        <option value="Navarra">Navarra</option>
+                        <option value="PaisVasco">País Vasco</option>
+                        <option value="LaRioja">La Rioja</option>
+                        <option value="Ceuta">Ceuta</option>
+                        <option value="Melilla">Melilla</option>
+                    </select>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div>    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email">
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+                <div>
+                    <label for="comentarios">Escribe tu texto aquí</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50%" placeholder="Escribe aquí tus comentarios..." maxlength="250"></textarea>
+                </div>
+        </fieldset>
+        <fieldset id="formaContacto">
+            <legend>¿Cómo contactamos contigo?</legend>
+            <div class="inline">
+                <label for="cTelefono">Teléfono</label>
+                <input type="checkbox" id="cTelefono" name="cTelefono">
+            </div>
+            <div class="inline">
+                <label for="cEmail">Email</label>
+                <input type="checkbox" id="cEmail" name="cEmail">
+            </div>
+            <div class="inline">
+                <label for="cWhat">Prefiero un Whatsapp</label>
+                <input type="checkbox" id="cWhat" name="cWhat">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <label for="edad">Soy mayor de edad</label>
+            <input type="radio" id="edad" name="edad" required>
+        </fieldset>
+
+        <fieldset>
+        <input type="submit" value="¡Conforme!" id="enviar" name="enviar" required>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
